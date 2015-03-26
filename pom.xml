@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples</groupId>
-	<artifactId>spring-petclinic</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>${war.name}</artifactId>
+	<version>${git.commitid}-${build.number}</version>
 
 	<name>petclinic</name>
 	<packaging>war</packaging>
@@ -358,7 +358,7 @@
 
 	<!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
 	<build>
-	 <finalName>${war.name}-${git.commitid}-${build.number}</finalName>
+	 <finalName>xyz</finalName>
 		<defaultGoal>install</defaultGoal>
 		<testResources>
 		  <testResource>
