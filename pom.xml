@@ -65,6 +65,9 @@
 		<dandelion.version>0.10.0</dandelion.version>
 
 		<mysql.version>5.1.22</mysql.version>
+		<build.number>SNAPSHOT</build.number>
+		<git.commitid>SNAPSHOT</git.commitid>
+		
 
 	</properties>
 
@@ -437,6 +440,17 @@
 				<version>2.3</version>
 				<configuration>
 					<warName>petclinic</warName>
+					<manifest>
+                    				<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                			</manifest>
+        				 <archive>
+                    				<manifestEntries>
+                					 <Specification-Title>${project.name}</Specification-Title>
+                					 <Specification-Version>${project.version}</Specification-Version>
+                					 <Implementation-Version>${build.number}</Implementation-Version>
+                					 <GIT-COMMIT-ID>${git.commitid}</GIT-COMMIT-ID>
+                				 </manifestEntries>
+        				 </archive>
 				</configuration>
 			</plugin>
 			<plugin>
