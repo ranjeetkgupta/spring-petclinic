@@ -441,7 +441,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<warName>${war.name}-${git.commitid}-${build.number}</warName>
+					
 					<manifest>
                     				<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                 			</manifest>
