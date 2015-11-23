@@ -1,6 +1,6 @@
 # Spring PetClinic Sample Application
 
-demo checkin 2
+demo checkin 3
 
 ## What does it look like?
 -spring-petclinic has been deployed here on cloudfoundry: http://demo-spring-petclinic.cfapps.io/
